@@ -1,0 +1,18 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: userService
+  redis:
+    host: baimingxu.com
+    port: 6379
+    database: 1
+    password: '******'
+  datasource:
+    url: jdbc:mysql://bj-cynosdbmysql-grp-e92lzfmi.sql.tencentcdb.com:20267/test?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&allowMultiQueries=true
+    username: root
+    password: '******'
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka,http://127.0.0.1:10088/eureka
